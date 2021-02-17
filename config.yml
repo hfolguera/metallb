@@ -10,3 +10,7 @@ data:
       protocol: layer2
       addresses:
       - 192.168.1.230-192.168.1.250
+    - name: jenkins-pool
+      protocol: layer2
+      addresses:
+      - 192.168.1.220-192.168.1.220
