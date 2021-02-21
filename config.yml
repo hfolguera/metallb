@@ -6,15 +6,27 @@ metadata:
 data:
   config: |
     address-pools:
-    - name: default
-      protocol: layer2
-      addresses:
-      - 192.168.1.230-192.168.1.250
     - name: jenkins-pool
       protocol: layer2
       addresses:
       - 192.168.1.220-192.168.1.220
-    - name: openvpn-pool
+    - name: awx-pool
       protocol: layer2
       addresses:
       - 192.168.1.221-192.168.1.221
+    - name: openvpn-pool
+      protocol: layer2
+      addresses:
+      - 192.168.1.222-192.168.1.222
+    - name: dashboard-pool
+      protocol: layer2
+      addresses:
+      - 192.168.1.223-192.168.1.223
+    - name: default
+      protocol: layer2
+      addresses:
+      - 192.168.1.230-192.168.1.250
+    - name: test
+      protocol: layer2
+      addresses:
+      - 192.168.1.251-192.168.1.254
