@@ -4,7 +4,9 @@
 ### 1. Verify requirements 
 Requirements described at https://metallb.universe.tf/#requirements
 
-### 2. Edit kube-proxy by allowing strictARP with the folowing contents
+### 2. Enable strictARP in kube-proxy configmap
+Edit the kube-proxy configmap with the command: `kubectl edit configmap -n kube-system kube-proxy` and search for the `strictARP` attribute to make sure it is set to `true`.
+
 ```
 apiVersion: kubeproxy.config.k8s.io/v1alpha1
 kind: KubeProxyConfiguration
