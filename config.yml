@@ -6,26 +6,30 @@ metadata:
 data:
   config: |
     address-pools:
-    - name: jenkins-pool
-      protocol: layer2
-      addresses:
-      - 192.168.1.220-192.168.1.220
-    - name: awx-pool
-      protocol: layer2
-      addresses:
-      - 192.168.1.221-192.168.1.221
-    - name: openvpn-pool
-      protocol: layer2
-      addresses:
-      - 192.168.1.222-192.168.1.222
     - name: dashboard-pool
       protocol: layer2
       addresses:
-      - 192.168.1.223-192.168.1.223
+      - 192.168.1.150-192.168.1.150
+    - name: openvpn-pool
+      protocol: layer2
+      addresses:
+      - 192.168.1.151-192.168.1.151
+    - name: awx-pool
+      protocol: layer2
+      addresses:
+      - 192.168.1.152-192.168.1.152
+    - name: jenkins-pool
+      protocol: layer2
+      addresses:
+      - 192.168.1.153-192.168.1.153
+    - name: grafana-pool
+      protocol: layer2
+      addresses:
+      - 192.168.1.150-192.168.1.150
     - name: oracle-pool
       protocol: layer2
       addresses:
-      - 192.168.1.224-192.168.1.225
+      - 192.168.1.200-192.168.1.203
     - name: default
       protocol: layer2
       addresses:
