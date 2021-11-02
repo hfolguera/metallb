@@ -9,23 +9,19 @@ data:
     - name: dashboard-pool
       protocol: layer2
       addresses:
-      - 192.168.1.150-192.168.1.150
+      - 192.168.1.150/32
     - name: openvpn-pool
       protocol: layer2
       addresses:
-      - 192.168.1.151-192.168.1.151
+      - 192.168.1.151/32
     - name: awx-pool
       protocol: layer2
       addresses:
-      - 192.168.1.152-192.168.1.152
+      - 192.168.1.152/32
     - name: jenkins-pool
       protocol: layer2
       addresses:
-      - 192.168.1.153-192.168.1.153
-    - name: grafana-pool
-      protocol: layer2
-      addresses:
-      - 192.168.1.150-192.168.1.150
+      - 192.168.1.153/32
     - name: oracle-pool
       protocol: layer2
       addresses:
@@ -38,3 +34,4 @@ data:
       protocol: layer2
       addresses:
       - 192.168.1.251-192.168.1.254
+
