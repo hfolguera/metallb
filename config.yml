@@ -22,6 +22,14 @@ data:
       protocol: layer2
       addresses:
       - 192.168.1.153/32
+    - name: shinobi-pool
+      protocol: layer2
+      addresses:
+      - 192.168.1.158/32
+    - name: argocd-pool
+      protocol: layer2
+      addresses:
+      - 192.168.1.159/32
     - name: oracle-pool
       protocol: layer2
       addresses:
