@@ -26,6 +26,10 @@ data:
       protocol: layer2
       addresses:
       - 192.168.1.155/32
+    - name: prometheus-pool
+      protocol: layer2
+      addresses:
+      - 192.168.1.156/32
     - name: shinobi-pool
       protocol: layer2
       addresses:
@@ -38,6 +42,18 @@ data:
       protocol: layer2
       addresses:
       - 192.168.1.200-192.168.1.203
+    - name: mongodb-pool
+      protocol: layer2
+      addresses:
+      - 192.168.1.160/32
+    - name: kafka-pool
+      protocol: layer2
+      addresses:
+      - 192.168.1.162/32
+    - name: elasticsearch-pool
+      protocol: layer2
+      addresses:
+      - 192.168.1.163/32
     - name: default
       protocol: layer2
       addresses:
