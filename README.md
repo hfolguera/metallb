@@ -16,32 +16,19 @@ ipvs:
 ```
 
 ### 3. Install MetalLB
+Obtain the last metallb resources:
 ```
-kubectl apply -f https://raw.githubusercontent.com/metallb/metallb/v0.9.5/manifests/namespace.yaml
-kubectl apply -f https://raw.githubusercontent.com/metallb/metallb/v0.9.5/manifests/metallb.yaml
-# On first install only
-kubectl create secret generic -n metallb-system memberlist --from-literal=secretkey="$(openssl rand -base64 128)"
+wget https://raw.githubusercontent.com/metallb/metallb/v0.14.3/config/manifests/metallb-native.yaml
 ```
 
-### 4. Create a configmap file config.yml
-Create a default address-pool with the folowing code:
+Execute the following command:
 ```
-apiVersion: v1
-kind: ConfigMap
-metadata:
-  namespace: metallb-system
-  name: config
-data:
-  config: |
-    address-pools:
-    - name: default
-      protocol: layer2
-      addresses:
-      - 192.168.1.230-192.168.1.250
+kubectl apply -f metallb-native.yaml
+kubectl apply -f l2-advertisement.yaml
 ```
 
-### 5. Apply the configmap 
-`kubectl apply -f config.yml`
+### 4. Apply the addresses configuration
+`kubectl apply -f address-pools.yaml`
 
 ## References
 Official deployment guide at: https://metallb.universe.tf/installation/
