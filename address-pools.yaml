@@ -214,6 +214,28 @@ metadata:
   namespace: metallb-system
 spec:
   addresses:
-    - 192.168.1.200-192.168.1.203
+    - 192.168.1.207/32
+  autoAssign: false
+  avoidBuggyIPs: true
+---
+apiVersion: metallb.io/v1beta1
+kind: IPAddressPool
+metadata:
+  name: mysql-pool
+  namespace: metallb-system
+spec:
+  addresses:
+    - 192.168.1.212/32
+  autoAssign: false
+  avoidBuggyIPs: true
+---
+apiVersion: metallb.io/v1beta1
+kind: IPAddressPool
+metadata:
+  name: postgres-pool
+  namespace: metallb-system
+spec:
+  addresses:
+    - 192.168.1.213/32
   autoAssign: false
   avoidBuggyIPs: true
