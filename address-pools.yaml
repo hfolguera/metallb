@@ -1,116 +1,6 @@
 apiVersion: metallb.io/v1beta1
 kind: IPAddressPool
 metadata:
-  name: dashboard-pool
-  namespace: metallb-system
-spec:
-  addresses:
-    - 192.168.1.150/32
-  autoAssign: false
-  avoidBuggyIPs: true
----
-apiVersion: metallb.io/v1beta1
-kind: IPAddressPool
-metadata:
-  name: openvpn-pool
-  namespace: metallb-system
-spec:
-  addresses:
-    - 192.168.1.151/32
-  autoAssign: false
-  avoidBuggyIPs: true
----
-apiVersion: metallb.io/v1beta1
-kind: IPAddressPool
-metadata:
-  name: awx-pool
-  namespace: metallb-system
-spec:
-  addresses:
-    - 192.168.1.152/32
-  autoAssign: false
-  avoidBuggyIPs: true
----
-apiVersion: metallb.io/v1beta1
-kind: IPAddressPool
-metadata:
-  name: jenkins-pool
-  namespace: metallb-system
-spec:
-  addresses:
-    - 192.168.1.153/32
-  autoAssign: false
-  avoidBuggyIPs: true
----
-apiVersion: metallb.io/v1beta1
-kind: IPAddressPool
-metadata:
-  name: morpheus-pool
-  namespace: metallb-system
-spec:
-  addresses:
-    - 192.168.1.154/32
-  autoAssign: false
-  avoidBuggyIPs: true
----
-apiVersion: metallb.io/v1beta1
-kind: IPAddressPool
-metadata:
-  name: grafana-pool
-  namespace: metallb-system
-spec:
-  addresses:
-    - 192.168.1.155/32
-  autoAssign: false
-  avoidBuggyIPs: true
----
-apiVersion: metallb.io/v1beta1
-kind: IPAddressPool
-metadata:
-  name: prometheus-pool
-  namespace: metallb-system
-spec:
-  addresses:
-    - 192.168.1.156/32
-  autoAssign: false
-  avoidBuggyIPs: true
----
-apiVersion: metallb.io/v1beta1
-kind: IPAddressPool
-metadata:
-  name: homeassistant-pool
-  namespace: metallb-system
-spec:
-  addresses:
-    - 192.168.1.157/32
-  autoAssign: false
-  avoidBuggyIPs: true
----
-apiVersion: metallb.io/v1beta1
-kind: IPAddressPool
-metadata:
-  name: shinobi-pool
-  namespace: metallb-system
-spec:
-  addresses:
-    - 192.168.1.158/32
-  autoAssign: false
-  avoidBuggyIPs: true
----
-apiVersion: metallb.io/v1beta1
-kind: IPAddressPool
-metadata:
-  name: argocd-pool
-  namespace: metallb-system
-spec:
-  addresses:
-    - 192.168.1.159/32
-  autoAssign: false
-  avoidBuggyIPs: true
----
-apiVersion: metallb.io/v1beta1
-kind: IPAddressPool
-metadata:
   name: mongodb-pool
   namespace: metallb-system
 spec:
@@ -127,72 +17,6 @@ metadata:
 spec:
   addresses:
     - 192.168.1.162/32
-  autoAssign: false
-  avoidBuggyIPs: true
----
-apiVersion: metallb.io/v1beta1
-kind: IPAddressPool
-metadata:
-  name: elasticsearch-pool
-  namespace: metallb-system
-spec:
-  addresses:
-    - 192.168.1.163/32
-  autoAssign: false
-  avoidBuggyIPs: true
----
-apiVersion: metallb.io/v1beta1
-kind: IPAddressPool
-metadata:
-  name: kibana-pool
-  namespace: metallb-system
-spec:
-  addresses:
-    - 192.168.1.164/32
-  autoAssign: false
-  avoidBuggyIPs: true
----
-apiVersion: metallb.io/v1beta1
-kind: IPAddressPool
-metadata:
-  name: nginx-ingress-pool
-  namespace: metallb-system
-spec:
-  addresses:
-    - 192.168.1.165/32
-  autoAssign: false
-  avoidBuggyIPs: true
----
-apiVersion: metallb.io/v1beta1
-kind: IPAddressPool
-metadata:
-  name: airflow-pool
-  namespace: metallb-system
-spec:
-  addresses:
-    - 192.168.1.166/32
-  autoAssign: false
-  avoidBuggyIPs: true
----
-apiVersion: metallb.io/v1beta1
-kind: IPAddressPool
-metadata:
-  name: goldengate-pool
-  namespace: metallb-system
-spec:
-  addresses:
-    - 192.168.1.168/32
-  autoAssign: false
-  avoidBuggyIPs: true
----
-apiVersion: metallb.io/v1beta1
-kind: IPAddressPool
-metadata:
-  name: wordpress-pool
-  namespace: metallb-system
-spec:
-  addresses:
-    - 192.168.1.169/32
   autoAssign: false
   avoidBuggyIPs: true
 ---
@@ -237,5 +61,16 @@ metadata:
 spec:
   addresses:
     - 192.168.1.213/32
+  autoAssign: false
+  avoidBuggyIPs: true
+---
+apiVersion: metallb.io/v1beta1
+kind: IPAddressPool
+metadata:
+  name: adguard-pool
+  namespace: metallb-system
+spec:
+  addresses:
+    - 192.168.1.214/32
   autoAssign: false
   avoidBuggyIPs: true
